@@ -154,6 +154,7 @@ public class ChatController {
 	 *  The text box with the user input will be set back to blank after a message is sent.
 	 */
 	public static void sendButtonAction(String userName) {
+		//changed appendText
 		sendButton.setOnAction((ActionEvent exception1) -> {
 			DateTimeFormatter date = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 			LocalDateTime time = LocalDateTime.now();
