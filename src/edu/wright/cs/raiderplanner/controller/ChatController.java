@@ -158,8 +158,8 @@ public class ChatController {
 			DateTimeFormatter date = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 			LocalDateTime time = LocalDateTime.now();
 			if (!(tfMessageToSend.getText().equals(""))) {
-				printOutput.println(tfMessageToSend.getText());
-				printOutput.flush();
+				msgArea.appendText(userName + ": " + tfMessageToSend.getText());
+				msgArea.appendText("\t" + date.format(time) + "\n");
 				tfMessageToSend.setText("");
 			}
 		});
