@@ -34,6 +34,7 @@ import javax.swing.JPopupMenu;
 import javax.swing.JTextArea;
 
 /**
+ * (non-Javadoc).
  * @author Dominick Hatton. Class that implements a right click pop up menu function.
  */
 public class RightClickPopup implements ActionListener, ItemListener {
@@ -60,7 +61,8 @@ public class RightClickPopup implements ActionListener, ItemListener {
 		JPopupMenu menu;
 
 		/**
-		 * @param popupMenu.
+		 * (non-JAVAdoc).
+		 * @param popupMenu
 		 *
 		 */
 		PopupListener(JPopupMenu popupMenu) {
@@ -96,7 +98,7 @@ public class RightClickPopup implements ActionListener, ItemListener {
 	}
 
 	/**
-	 * (non-Javadoc)
+	 * (non-Javadoc).
 	 *
 	 * @see java.awt.event.ItemListener#itemStateChanged(java.awt.event.ItemEvent)
 	 */
@@ -107,7 +109,7 @@ public class RightClickPopup implements ActionListener, ItemListener {
 	}
 
 	/**
-	 * (non-Javadoc)
+	 * (non-Javadoc).
 	 *
 	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */

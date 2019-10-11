@@ -546,9 +546,8 @@ public class DataController {
 				buttonPressed = UiManager.displayFileOpenError(e.getMessage());
 			}
 		}
-		
-		if(buttonPressed == ButtonType.OK) {
-			
+
+		if (buttonPressed == ButtonType.OK) {
 			tempFile = MainController.ui.loadFileDialog();
 			hub = loadHubFile(tempFile);
 		}

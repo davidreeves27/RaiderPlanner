@@ -687,6 +687,7 @@ public class UiManager {
 	}
 
 	/**
+	 * (non-Javadoc).
 	 * Displays an error to the user.
 	 *
 	 * @param message to be displayed to user
@@ -695,17 +696,21 @@ public class UiManager {
 		Alert alert = new Alert(Alert.AlertType.ERROR, message);
 		alert.showAndWait();
 	}
-	
-	
+
+	/**
+	 * (non-Javadoc).
+	 * Displays an error to the user.
+	 *
+	 * @param message to be displayed to user
+	 */
 	public static ButtonType displayFileOpenError(String message) {
-		
-		Alert alert = new Alert(Alert.AlertType.ERROR, "Unable to open file, Please choose a new file.",
+		Alert alert = new Alert(Alert.AlertType.ERROR,
+				"Unable to open file, Please choose a new file.",
 				ButtonType.OK, ButtonType.CANCEL);
 		alert.setGraphic(null);
 		alert.setHeaderText(message);
 		alert.showAndWait();
 		return alert.getResult();
-		
 	}
 
 	/**

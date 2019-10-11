@@ -77,6 +77,7 @@ public class CalendarController {
 	}
 
 	/**
+	 * (non-Javadoc).
 	 * Gets layout for calendar
 	 * @return The current layout of the calendar.
 	 *

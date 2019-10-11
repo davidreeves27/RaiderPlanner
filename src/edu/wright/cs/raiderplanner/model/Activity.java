@@ -93,6 +93,7 @@ public class Activity extends Event {
 	}
 
 	/**
+	 * (non-JAVAdoc).
 	 * Getter for activity quantity
 	 * @return the Quantity of this Activity.
 	 */
@@ -101,6 +102,7 @@ public class Activity extends Event {
 	}
 
 	/**
+	 * (non-JAVAdoc).
 	 * @return the Quantity Type of this Activity.
 	 */
 	public QuantityType getType() {
