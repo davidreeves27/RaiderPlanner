@@ -62,6 +62,7 @@ public class AccountController implements Initializable {
 	@FXML private Alert emptyNameAlert = new Alert(AlertType.CONFIRMATION);
 
 	private Account account;
+	private Account accountcommit;
 	private boolean success = false;
 
 	/**
