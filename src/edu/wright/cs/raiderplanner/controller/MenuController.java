@@ -58,6 +58,7 @@ import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
 import javafx.scene.Cursor;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
@@ -87,6 +88,7 @@ import javafx.scene.layout.BackgroundImage;
 import javafx.scene.layout.BackgroundPosition;
 import javafx.scene.layout.BackgroundRepeat;
 import javafx.scene.layout.BackgroundSize;
+import javafx.scene.layout.Border;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.FlowPane;
@@ -112,7 +114,6 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Locale;
 import java.util.ResourceBundle;
-
 /**
  * Actions associated with the menu and its items.
  *
@@ -199,6 +200,8 @@ public class MenuController implements Initializable {
 
 	// chat variables
 	private static final BorderPane mainPane = new BorderPane();
+	private static Image icon = new Image("file:icon.png");
+	private ImageView logo = new ImageView();
 	private final GridPane firstPane = new GridPane();
 	private TextField tfName = new TextField("");
 	private TextField tfHost = new TextField("");
@@ -1185,13 +1188,23 @@ public class MenuController implements Initializable {
 	 * his or her username and host name and sets hint for W number format.
 	 */
 	public void createFirstWindow() {
-		firstPane.add(name, 0, 0);
-		firstPane.add(tfName, 1, 0);
-		firstPane.add(host, 0, 1);
-		firstPane.add(tfHost, 1, 1);
-		firstPane.add(submitButton, 1, 2);
+		logo.setFitHeight(100);
+		logo.setFitWidth(115);
+		logo.setImage(icon);
+		firstPane.add(logo,1,0);
+		firstPane.setMinSize(200, 200);
+		firstPane.setPadding(new Insets(10,10,10,10));
+		firstPane.add(name, 0, 1);
+		firstPane.add(tfName, 1, 1);
+		firstPane.add(host, 0, 2);
+		firstPane.add(tfHost, 1, 2);
+		firstPane.add(submitButton, 2, 2);
 		tfName.setPromptText("W Number (ex: w000xxx)");
 		tfHost.setPromptText("W Number (ex: w000xxx)");
+		firstPane.setStyle("-fx-border-color: #cc9900");
+		firstPane.setVgap(12);
+		firstPane.setHgap(12);
+		firstPane.setAlignment(Pos.CENTER);
 	}
 
 	/**
