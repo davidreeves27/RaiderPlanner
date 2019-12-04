@@ -137,6 +137,7 @@ public class ModuleController implements Initializable {
 			// Update the current Module:
 			this.module.setOrganiser(organizer);
 			this.module.setModuleCode(this.code.getText());
+			
 			this.module.setName(this.name.getText());
 			this.module.setDetails(this.details.getText());
 		}
