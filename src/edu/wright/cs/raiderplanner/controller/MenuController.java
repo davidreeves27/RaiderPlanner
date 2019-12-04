@@ -1864,7 +1864,7 @@ public class MenuController implements Initializable {
 
 		if (MainController.getSpc().getPlanner().getCurrentStudyProfile()
 				.getModules().length <= 0) {
-			this.modules.setDisable(true);
+			this.modules.setDisable(false);
 		}
 		//}
 	}
