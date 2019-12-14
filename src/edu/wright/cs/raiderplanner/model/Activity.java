@@ -92,8 +92,11 @@ public class Activity extends Event {
 		return this.taskList.toArray(new Task[this.taskList.size()]);
 	}
 
+
 	/**
 	 * (non-JAVAdoc).
+	/** (non-Javadoc).
+
 	 * Getter for activity quantity
 	 * @return the Quantity of this Activity.
 	 */
@@ -101,8 +104,11 @@ public class Activity extends Event {
 		return activityQuantity;
 	}
 
+
 	/**
 	 * (non-JAVAdoc).
+	/** (non-Javadoc).
+
 	 * @return the Quantity Type of this Activity.
 	 */
 	public QuantityType getType() {

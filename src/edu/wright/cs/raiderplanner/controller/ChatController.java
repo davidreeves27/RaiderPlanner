@@ -152,13 +152,18 @@ public class ChatController {
 	 *  the line of text will append to the chat log so the user can see what they sent. It follows
 	 *  the format of USER: sentence time/date.
 	 *  The text box with the user input will be set back to blank after a message is sent.
+	 *  Fixed by: Austin Naas
 	 */
 	public static void sendButtonAction(String userName) {
 		//changed appendText
 		sendButton.setOnAction((ActionEvent exception1) -> {
 			DateTimeFormatter date = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 			LocalDateTime time = LocalDateTime.now();
+
 			if (!(tfMessageToSend.getText().equals(""))) {
+
+			if ((!tfMessageToSend.getText().equals(""))) {
+
 				msgArea.appendText(userName + ": " + tfMessageToSend.getText());
 				msgArea.appendText("\t" + date.format(time) + "\n");
 				tfMessageToSend.setText("");

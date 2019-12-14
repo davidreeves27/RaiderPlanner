@@ -60,8 +60,12 @@ public class RightClickPopup implements ActionListener, ItemListener {
 	class PopupListener extends MouseAdapter {
 		JPopupMenu menu;
 
+
 		/**
 		 * (non-JAVAdoc).
+
+		/** (non-Javadoc).
+
 		 * @param popupMenu
 		 *
 		 */
@@ -97,8 +101,11 @@ public class RightClickPopup implements ActionListener, ItemListener {
 		}
 	}
 
+
 	/**
 	 * (non-Javadoc).
+	/** (non-Javadoc).
+   *
 	 *
 	 * @see java.awt.event.ItemListener#itemStateChanged(java.awt.event.ItemEvent)
 	 */
@@ -108,8 +115,11 @@ public class RightClickPopup implements ActionListener, ItemListener {
 
 	}
 
+
 	/**
 	 * (non-Javadoc).
+	/** (non-Javadoc).
+   *
 	 *
 	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */

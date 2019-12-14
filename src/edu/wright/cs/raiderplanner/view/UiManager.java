@@ -587,6 +587,9 @@ public class UiManager {
 		fileChooser.setTitle("Save Ganttish Diagram");
 		fileChooser.getExtensionFilters().add(pngExtension);
 		File path = fileChooser.showSaveDialog(stage);
+		if (path == null) {
+			return null;
+		}
 		return path.getAbsolutePath();
 	}
 
@@ -760,4 +763,17 @@ public class UiManager {
 		return savesFolder;
 	}
 
+	/** (non-Javadoc).
+	 * @param message to be displayed to user
+	 *
+	 */
+	public static ButtonType displayFileOpenError(String message) {
+		Alert alert = new Alert(Alert.AlertType.ERROR,
+			"Unable to open file. Please choose a new file.",
+			ButtonType.OK, ButtonType.CANCEL);
+		alert.setGraphic(null);
+		alert.setHeaderText(message);
+		alert.showAndWait();
+		return alert.getResult();
+	}
 }
