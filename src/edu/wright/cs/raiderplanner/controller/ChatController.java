@@ -162,12 +162,11 @@ public class ChatController {
 
 			if (!(tfMessageToSend.getText().equals(""))) {
 
-			if ((!tfMessageToSend.getText().equals(""))) {
-
-				msgArea.appendText(userName + ": " + tfMessageToSend.getText());
-				msgArea.appendText("\t" + date.format(time) + "\n");
-				tfMessageToSend.setText("");
-			}
+				if ((!tfMessageToSend.getText().equals(""))) {
+					msgArea.appendText(userName + ": " + tfMessageToSend.getText());
+					msgArea.appendText("\t" + date.format(time) + "\n");
+					tfMessageToSend.setText("");
+				}
 		});
 	}
 }
