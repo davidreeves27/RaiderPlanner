@@ -167,6 +167,6 @@ public class ChatController {
 					msgArea.appendText("\t" + date.format(time) + "\n");
 					tfMessageToSend.setText("");
 				}
-		});
+		}
 	}
 }
